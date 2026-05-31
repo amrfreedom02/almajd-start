@@ -1,7 +1,7 @@
 'use client';
 import { ShieldCheck, ArrowLeft } from 'lucide-react';
 
-const HERO_VIDEO_URL = 'https://public.readdy.ai/ai/video_res/019e79c5-5ac0-7a03-a9ad-554d450ea1e1.mp4';
+const HERO_VIDEO_URL = 'https://storage.readdy-site.link/project_files/f5892100-29bb-4e31-bdc5-33222d4d83f4/76b2d3cd-f85b-4091-8267-2825966aaa19_Eagle_logo_pulsing_light_effect_202605302020.mp4?v=dd9c13a94d1f42e0e853f05d89b64860';
 
 const LOGO_URL = 'https://static.readdy.ai/image/f01d069de9648afc1fc061d75fe35c05/f141cd39aba6c917f1071efe3f465f97.png';
 
