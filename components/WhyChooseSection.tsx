@@ -1,6 +1,5 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
-import { Star, CheckCircle2, ArrowLeft } from 'lucide-react';
 
 const reasons = [
   { title: 'الاحترافية والانضباط', desc: 'نلتزم بأعلى درجات الجدية والمسؤولية في تنفيذ المهام الأمنية.' },
@@ -38,7 +37,7 @@ export default function WhyChooseSection() {
         <div className={`text-center mb-10 md:mb-16 transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           <div className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full mb-3 md:mb-4" style={{ background: 'rgba(155,122,75,0.15)', border: '1px solid rgba(155,122,75,0.3)', backdropFilter: 'blur(10px)' }}>
             <div className="w-4 h-4 flex items-center justify-center">
-              <Star size={14} style={{ color: '#9b7a4b' }} />
+              <i className="ri-star-fill text-xs" style={{ color: '#9b7a4b' }}></i>
             </div>
             <span className="text-xs md:text-sm font-medium" style={{ color: '#9b7a4b' }}>ما يميزنا</span>
           </div>
@@ -63,17 +62,15 @@ export default function WhyChooseSection() {
               onMouseEnter={e => {
                 (e.currentTarget as HTMLElement).style.background = 'rgba(75,90,59,0.3)';
                 (e.currentTarget as HTMLElement).style.borderColor = 'rgba(155,122,75,0.5)';
-                (e.currentTarget as HTMLElement).style.transform = 'translateY(-4px)';
               }}
               onMouseLeave={e => {
                 (e.currentTarget as HTMLElement).style.background = 'rgba(255,255,255,0.05)';
                 (e.currentTarget as HTMLElement).style.borderColor = 'rgba(155,122,75,0.2)';
-                (e.currentTarget as HTMLElement).style.transform = 'translateY(0)';
               }}
             >
               <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg md:rounded-xl flex items-center justify-center mb-3 md:mb-4" style={{ background: 'rgba(155,122,75,0.15)' }}>
                 <div className="w-6 h-6 flex items-center justify-center" style={{ color: '#9b7a4b' }}>
-                  <CheckCircle2 size={16} />
+                  <i className="ri-checkbox-circle-line text-base"></i>
                 </div>
               </div>
               <h3 className="text-sm md:text-base font-bold mb-1 md:mb-2" style={{ color: '#ffffff' }}>{reason.title}</h3>
@@ -93,17 +90,15 @@ export default function WhyChooseSection() {
               transition: 'all 0.3s ease',
             }}
             onMouseEnter={e => {
-              (e.currentTarget as HTMLElement).style.transform = 'scale(1.06) translateY(-2px)';
               (e.currentTarget as HTMLElement).style.boxShadow = '0 0 60px rgba(155,122,75,0.7), 0 12px 40px rgba(0,0,0,0.4)';
             }}
             onMouseLeave={e => {
-              (e.currentTarget as HTMLElement).style.transform = 'scale(1) translateY(0)';
               (e.currentTarget as HTMLElement).style.boxShadow = '0 0 40px rgba(155,122,75,0.5), 0 8px 32px rgba(0,0,0,0.3)';
             }}
           >
             <span className="relative z-10 flex items-center gap-2">
               <span>احجز استشارتك الآن</span>
-              <div className="w-5 h-5 flex items-center justify-center"><ArrowLeft size={18} /></div>
+              <div className="w-5 h-5 flex items-center justify-center"><i className="ri-arrow-left-line text-lg"></i></div>
             </span>
           </a>
         </div>
