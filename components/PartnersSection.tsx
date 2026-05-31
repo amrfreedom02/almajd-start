@@ -1,6 +1,5 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
-import { Star } from 'lucide-react';
 
 const partners = [
   { name: 'فندق تاج شمسان', logo: 'https://static.readdy.ai/project_files/f5892100-29bb-4e31-bdc5-33222d4d83f4/6ed220a4-5bae-4677-beeb-4dbf3567595e_--.jpg?v=49fc7a2b6f59e9aa5e3c72b2ebdf45f9' },
@@ -32,7 +31,7 @@ export default function PartnersSection() {
         <div className={`text-center mb-8 md:mb-14 transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           <div className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full mb-3 md:mb-4" style={{ background: 'rgba(75,90,59,0.1)', border: '1px solid rgba(75,90,59,0.2)' }}>
             <div className="w-4 h-4 flex items-center justify-center">
-              <Star size={14} style={{ color: '#4b5a3b' }} />
+              <i className="ri-star-fill" style={{ fontSize: '14px', color: '#4b5a3b' }}></i>
             </div>
             <span className="text-xs md:text-sm font-medium" style={{ color: '#4b5a3b' }}>ثقة عملائنا</span>
           </div>

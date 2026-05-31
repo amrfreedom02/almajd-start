@@ -1,6 +1,5 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
-import { Info, Eye, Target, CheckCircle2 } from 'lucide-react';
 
 const goals = [
   { text: 'تقديم خدمات أمنية موثوقة تلبي احتياجات المنشآت، والشخصيات، والفعاليات بمستوى عالٍ من الجودة والانضباط.' },
@@ -33,7 +32,7 @@ export default function AboutSection() {
       <div className="w-full px-4 sm:px-6 lg:px-16 max-w-7xl mx-auto">
         <div className={`text-center mb-10 sm:mb-16 transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-4" style={{ background: 'rgba(75,90,59,0.1)', border: '1px solid rgba(75,90,59,0.2)' }}>
-            <div className="w-4 h-4 flex items-center justify-center"><Info size={16} style={{ color: '#4b5a3b' }} /></div>
+            <div className="w-4 h-4 flex items-center justify-center"><i className="ri-information-line" style={{ fontSize: '16px', color: '#4b5a3b' }}></i></div>
             <span className="text-sm font-medium" style={{ color: '#4b5a3b' }}>تعرف علينا</span>
           </div>
           <h2 className="text-xl sm:text-3xl md:text-5xl font-extrabold mb-4" style={{ color: '#4b5a3b' }}>منظومة أمنية متكاملة تفوق التوقعات</h2>
@@ -69,8 +68,8 @@ export default function AboutSection() {
                   }}
                 >
                   <div className="w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center mx-auto mb-1 sm:mb-2">
-                    {key === 'vision' ? <Eye size={16} className="sm:hidden" /> : <Target size={16} className="sm:hidden" />}
-                    {key === 'vision' ? <Eye size={20} className="hidden sm:block" /> : <Target size={20} className="hidden sm:block" />}
+                    {key === 'vision' ? <i className="ri-eye-line text-base sm:hidden" style={{ color: '#4b5a3b' }}></i> : <i className="ri-focus-2-line text-base sm:hidden" style={{ color: '#4b5a3b' }}></i>}
+                    {key === 'vision' ? <i className="ri-eye-line text-xl hidden sm:block" style={{ color: '#4b5a3b' }}></i> : <i className="ri-focus-2-line text-xl hidden sm:block" style={{ color: '#4b5a3b' }}></i>}
                   </div>
                   {key === 'vision' ? 'رؤيتنا' : 'رسالتنا'}
                 </button>
@@ -110,8 +109,8 @@ export default function AboutSection() {
             >
               <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5" style={{ background: 'rgba(75,90,59,0.1)' }}>
                 <div className="w-4 h-4 sm:w-5 sm:h-5 flex items-center justify-center" style={{ color: '#4b5a3b' }}>
-                  <CheckCircle2 size={12} className="sm:hidden" />
-                  <CheckCircle2 size={14} className="hidden sm:block" />
+                  <i className="ri-check-double-line text-xs sm:hidden"></i>
+                  <i className="ri-check-double-line text-sm hidden sm:block"></i>
                 </div>
               </div>
               <p className="text-xs sm:text-sm font-medium" style={{ color: '#646453', lineHeight: 1.8 }}>{goal.text}</p>

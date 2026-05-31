@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { Phone } from 'lucide-react';
 
 const WhatsAppIcon = ({ size = 24 }: { size?: number }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -43,7 +42,7 @@ export default function FloatingContact() {
           }}
           aria-label="Phone"
         >
-          <Phone size={16} />
+          <i className="ri-phone-line text-base"></i>
         </a>
       </div>
 

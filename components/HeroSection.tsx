@@ -1,5 +1,4 @@
 'use client';
-import { ShieldCheck, ArrowLeft } from 'lucide-react';
 
 const HERO_VIDEO_URL = 'https://storage.readdy-site.link/project_files/f5892100-29bb-4e31-bdc5-33222d4d83f4/76b2d3cd-f85b-4091-8267-2825966aaa19_Eagle_logo_pulsing_light_effect_202605302020.mp4?v=dd9c13a94d1f42e0e853f05d89b64860';
 
@@ -88,7 +87,7 @@ export default function HeroSection() {
             }}
           >
             <div className="w-4 h-4 flex items-center justify-center">
-              <ShieldCheck size={16} style={{ color: '#c4a06a' }} />
+              <i className="ri-shield-check-line" style={{ fontSize: '16px', color: '#c4a06a' }}></i>
             </div>
             <span className="text-xs sm:text-sm md:text-base font-medium" style={{ color: '#c4a06a' }}>
               خدمات أمنية احترافية
@@ -158,7 +157,7 @@ export default function HeroSection() {
               <span className="relative z-10 flex items-center justify-center gap-2">
                 <span>احجز استشارتك الأمنية الآن</span>
                 <div className="w-5 h-5 flex items-center justify-center">
-                  <ArrowLeft size={20} />
+                  <i className="ri-arrow-left-line text-xl"></i>
                 </div>
               </span>
               <div

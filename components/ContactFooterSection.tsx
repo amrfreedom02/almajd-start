@@ -1,6 +1,5 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
-import { Users, MapPin, Phone, Mail, Globe, Facebook, MessageCircle, Instagram } from 'lucide-react';
 
 const LOGO_URL = 'https://static.readdy.ai/image/f01d069de9648afc1fc061d75fe35c05/f141cd39aba6c917f1071efe3f465f97.png';
 
@@ -48,7 +47,7 @@ export default function ContactFooterSection() {
       <div className="w-full px-4 sm:px-6 lg:px-16 max-w-7xl mx-auto py-16 sm:py-20 md:py-28">
         <div className={`text-center mb-10 sm:mb-16 transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-4" style={{ background: 'rgba(155,122,75,0.15)', border: '1px solid rgba(155,122,75,0.3)' }}>
-            <Users size={16} style={{ color: '#9b7a4b' }} />
+            <i className="ri-team-line" style={{ fontSize: '16px', color: '#9b7a4b' }}></i>
             <span className="text-sm font-medium" style={{ color: '#9b7a4b' }}>تواصل معنا</span>
           </div>
           <h2 className="text-xl sm:text-3xl md:text-5xl font-extrabold mb-4" style={{ color: '#ffffff' }}>تواصل معنا اليوم</h2>
@@ -62,8 +61,8 @@ export default function ContactFooterSection() {
               <div className="space-y-4 sm:space-y-6">
                 <div className="flex items-start gap-3 sm:gap-4">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: 'rgba(155,122,75,0.15)' }}>
-                    <MapPin size={18} className="sm:hidden" style={{ color: '#9b7a4b' }} />
-                    <MapPin size={22} className="hidden sm:block" style={{ color: '#9b7a4b' }} />
+                    <i className="ri-map-pin-line text-lg sm:hidden" style={{ color: '#9b7a4b' }}></i>
+                    <i className="ri-map-pin-line text-xl hidden sm:block" style={{ color: '#9b7a4b' }}></i>
                   </div>
                   <div>
                     <div className="text-xs sm:text-sm font-medium mb-1" style={{ color: 'rgba(255,255,255,0.5)' }}>العنوان</div>
@@ -73,8 +72,8 @@ export default function ContactFooterSection() {
 
                 <div className="flex items-start gap-3 sm:gap-4">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: 'rgba(155,122,75,0.15)' }}>
-                    <Phone size={18} className="sm:hidden" style={{ color: '#9b7a4b' }} />
-                    <Phone size={22} className="hidden sm:block" style={{ color: '#9b7a4b' }} />
+                    <i className="ri-phone-line text-lg sm:hidden" style={{ color: '#9b7a4b' }}></i>
+                    <i className="ri-phone-line text-xl hidden sm:block" style={{ color: '#9b7a4b' }}></i>
                   </div>
                   <div>
                     <div className="text-xs sm:text-sm font-medium mb-1" style={{ color: 'rgba(255,255,255,0.5)' }}>الهواتف</div>
@@ -84,8 +83,8 @@ export default function ContactFooterSection() {
 
                 <div className="flex items-start gap-3 sm:gap-4">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: 'rgba(155,122,75,0.15)' }}>
-                    <Mail size={18} className="sm:hidden" style={{ color: '#9b7a4b' }} />
-                    <Mail size={22} className="hidden sm:block" style={{ color: '#9b7a4b' }} />
+                    <i className="ri-mail-line text-lg sm:hidden" style={{ color: '#9b7a4b' }}></i>
+                    <i className="ri-mail-line text-xl hidden sm:block" style={{ color: '#9b7a4b' }}></i>
                   </div>
                   <div>
                     <div className="text-xs sm:text-sm font-medium mb-1" style={{ color: 'rgba(255,255,255,0.5)' }}>البريد الإلكتروني</div>
@@ -95,8 +94,8 @@ export default function ContactFooterSection() {
 
                 <div className="flex items-start gap-3 sm:gap-4">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: 'rgba(155,122,75,0.15)' }}>
-                    <Globe size={18} className="sm:hidden" style={{ color: '#9b7a4b' }} />
-                    <Globe size={22} className="hidden sm:block" style={{ color: '#9b7a4b' }} />
+                    <i className="ri-global-line text-lg sm:hidden" style={{ color: '#9b7a4b' }}></i>
+                    <i className="ri-global-line text-xl hidden sm:block" style={{ color: '#9b7a4b' }}></i>
                   </div>
                   <div>
                     <div className="text-xs sm:text-sm font-medium mb-1" style={{ color: 'rgba(255,255,255,0.5)' }}>الموقع الإلكتروني</div>
@@ -244,9 +243,9 @@ export default function ContactFooterSection() {
 
           <div className="flex items-center gap-3">
             {[
-              { icon: Facebook, href: 'https://www.facebook.com/share/18Raj8YjPd/' },
-              { icon: MessageCircle, href: 'https://wa.me/967771171890' },
-              { icon: Instagram, href: 'https://www.instagram.com/almajdstar?igsh=Nnp1cWloaHE0YXM3' },
+              { icon: 'ri-facebook-fill', href: 'https://www.facebook.com/share/18Raj8YjPd/' },
+              { icon: 'ri-whatsapp-line', href: 'https://wa.me/967771171890' },
+              { icon: 'ri-instagram-line', href: 'https://www.instagram.com/almajdstar?igsh=Nnp1cWloaHE0YXM3' },
             ].map((item, i) => (
               <a
                 key={i}
@@ -264,8 +263,8 @@ export default function ContactFooterSection() {
                   (e.currentTarget as HTMLElement).style.color = 'rgba(255,255,255,0.5)';
                 }}
               >
-                <item.icon size={16} className="sm:hidden" />
-                <item.icon size={18} className="hidden sm:block" />
+                <i className={`${item.icon} text-base sm:hidden`}></i>
+                <i className={`${item.icon} text-lg hidden sm:block`}></i>
               </a>
             ))}
           </div>
